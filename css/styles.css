@@ -374,6 +374,14 @@ body {
     line-height: var(--md-sys-typescale-body-large-line-height);
 }
 
+.about__paragraph--highlighted {
+    margin-top: 24px;
+    padding: 16px;
+    background: var(--md-sys-color-surface-container-low);
+    border-radius: var(--md-sys-shape-corner-medium);
+    font-style: italic;
+}
+
 .about__image-container {
     text-align: center;
 }
@@ -494,6 +502,13 @@ body {
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
+}
+
+.project-card__actions {
+    display: flex;
+    gap: 8px;
+    margin-top: 16px;
+    flex-wrap: wrap;
 }
 
 .tag {
