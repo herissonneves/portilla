@@ -2,6 +2,8 @@
 
 A modern, responsive portfolio landing page for IT development professionals entering the job market.
 
+> **About the name**: _Portilla_ means "small door" or "gateway" in Spanish, symbolizing the entry point to my professional profile and career journey in IT development.
+
 [![Live Demo](https://img.shields.io/badge/demo-live-success?style=for-the-badge)](https://herissonneves.github.io/portilla/)
 [![GitHub Release](https://img.shields.io/github/v/release/herissonneves/portilla?style=for-the-badge)](https://github.com/herissonneves/portilla/releases)
 [![License](https://img.shields.io/github/license/herissonneves/portilla?style=for-the-badge)](LICENSE)
