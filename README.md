@@ -6,10 +6,16 @@ A modern, responsive portfolio landing page for IT development professionals ent
 
 ## 🚀 Features
 
+- **Material Design 3**: Implements Google's latest Material Design system with design tokens
+- **BEM CSS Methodology**: Clean, maintainable CSS with Block Element Modifier naming convention
 - **Responsive Design**: Fully responsive layout that works seamlessly on desktop, tablet, and mobile devices
 - **Multi-language Support**: Built-in internationalization with English, Portuguese (BR), and Spanish
-- **Theme System**: Comprehensive theme support with light and dark variants, including high contrast options for accessibility
-- **Modern UI/UX**: Clean, professional design with smooth animations and transitions
+- **Advanced Theme System**: 
+  - Light and dark modes with system preference detection
+  - Three contrast levels: Standard, Medium, and High Contrast
+  - Automatic system theme and contrast detection
+  - User preference persistence with localStorage
+- **Modern UI/UX**: Clean, professional design with MD3 elevation, typography, and motion systems
 - **Interactive Sections**: 
   - Hero section with call-to-action buttons
   - About section with professional introduction
@@ -17,29 +23,38 @@ A modern, responsive portfolio landing page for IT development professionals ent
   - Projects portfolio with featured work
   - Contact form with social media links
 - **Mobile-First Approach**: Optimized for mobile devices with hamburger menu
-- **Smooth Navigation**: Smooth scrolling between sections
-- **Accessibility**: High contrast themes and semantic HTML for better accessibility
+- **Smooth Navigation**: Smooth scrolling between sections with MD3 motion system
+- **Accessibility**: WCAG compliant with ARIA labels, semantic HTML, and high contrast support
 
 ## 🛠️ Technologies Used
 
 - **HTML5**: Semantic markup and modern structure
 - **CSS3**: Custom properties, flexbox, grid, animations
+- **Material Design 3**: Google's latest design system with design tokens
+- **BEM CSS**: Block Element Modifier methodology for scalable CSS architecture
 - **JavaScript ES6+**: Modular architecture with ES6 modules
 - **No Dependencies**: Pure HTML/CSS/JS - no frameworks or build tools required
 
 ## 🎨 Theme System
 
-The project includes a comprehensive theme system with multiple variants:
+The project includes a comprehensive Material Design 3 theme system with multiple variants:
 
 ### Light Themes
-- `light.css` - Standard light theme
+- `light.css` - Standard light theme (low contrast)
 - `light-mc.css` - Medium contrast light theme
 - `light-hc.css` - High contrast light theme
 
 ### Dark Themes
-- `dark.css` - Standard dark theme
+- `dark.css` - Standard dark theme (low contrast)
 - `dark-mc.css` - Medium contrast dark theme
 - `dark-hc.css` - High contrast dark theme
+
+### Features
+- **Automatic Detection**: Detects system theme preference (`prefers-color-scheme`)
+- **Contrast Detection**: Detects system contrast preference (`prefers-contrast`)
+- **User Preferences**: Saves theme and contrast choices in localStorage
+- **Dynamic Switching**: Change themes without page reload
+- **System Sync**: Automatically updates when system preferences change
 
 ## 🌍 Supported Languages
 
@@ -64,6 +79,7 @@ portilla/
 │       └── light-mc.css
 ├── js/
 │   ├── main.js             # Application entry point
+│   ├── theme.js            # Theme & contrast management
 │   ├── language.js         # Language switching module
 │   ├── navigation.js       # Navigation & scrolling module
 │   ├── form.js             # Form handling module
@@ -153,6 +169,11 @@ xdg-open index.html
    - Add new modules and import them in `js/main.js`
    - Follow the existing modular pattern
 
+7. **Customize Theme Colors**:
+   - Theme colors are defined in `css/theme/*.css` files
+   - Uses Material Design 3 color system
+   - Modify color values while maintaining MD3 token names
+
 ### Color Customization
 
 The main colors can be customized by editing the CSS variables in `css/styles.css`:
@@ -172,13 +193,25 @@ The main colors can be customized by editing the CSS variables in `css/styles.cs
 
 ### JavaScript Architecture
 
-The application uses a modular ES6 architecture:
+The application uses a modular ES6 architecture with BEM CSS methodology:
 
+**JavaScript Modules:**
 - **`main.js`**: Application entry point, initializes all modules
+- **`theme.js`**: Theme and contrast level management with system detection
 - **`language.js`**: Handles language switching and translations
 - **`navigation.js`**: Menu toggling, smooth scrolling, scroll effects
 - **`form.js`**: Contact form handling and validation
 - **`translations.js`**: i18n data for all supported languages
+
+**CSS Architecture:**
+- **BEM Methodology**: Block Element Modifier naming convention
+  - Example: `.navigation__menu--active`
+- **Material Design 3 Tokens**: Design system variables
+  - Colors: `--md-sys-color-primary`
+  - Typography: `--md-sys-typescale-body-large`
+  - Elevation: `--md-sys-elevation-level1`
+  - Shape: `--md-sys-shape-corner-medium`
+  - Motion: `--md-sys-motion-duration-short2`
 
 To add new functionality, create a new module and import it in `main.js`.
 
