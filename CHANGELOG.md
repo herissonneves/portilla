@@ -101,6 +101,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 This is the first stable release of Portilla, a professional portfolio landing page built with modern web technologies and best practices. The project demonstrates expertise in vanilla web development, design systems, and clean code architecture.
 
 **Key Highlights**:
+
 - 🎨 Material Design 3 implementation
 - 🏗️ BEM CSS methodology
 - 🌍 Multi-language support (EN/PT/ES)
@@ -110,4 +111,3 @@ This is the first stable release of Portilla, a professional portfolio landing p
 - 🚀 Zero dependencies
 
 [1.0.0]: https://github.com/herissonneves/portilla/releases/tag/v1.0.0
-
