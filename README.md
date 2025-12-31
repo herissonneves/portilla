@@ -39,6 +39,9 @@ The portfolio is fully deployed and ready to explore! Try switching between them
 - **Mobile-First Approach**: Optimized for mobile devices with hamburger menu
 - **Smooth Navigation**: Smooth scrolling between sections with MD3 motion system
 - **Accessibility**: WCAG compliant with ARIA labels, semantic HTML, and high contrast support
+- **GitHub Integration**: Direct links to GitHub profile and project repositories
+- **SEO Optimized**: Comprehensive meta tags, Open Graph, and Twitter Card support
+- **Modular Architecture**: Clean separation of concerns with focused modules
 
 ## 🛠️ Technologies Used
 
@@ -86,7 +89,21 @@ Language switching is instant and affects all content throughout the page.
 ```text
 portilla/
 ├── css/
-│   ├── styles.css          # Main stylesheet
+│   ├── index.css           # Main stylesheet (imports all modules)
+│   ├── base.css            # Reset, variables, typography
+│   ├── navigation.css      # Navigation bar
+│   ├── language-selector.css
+│   ├── theme-selector.css
+│   ├── hero.css            # Hero section
+│   ├── buttons.css         # Button components
+│   ├── sections.css        # Section layout
+│   ├── about.css           # About section
+│   ├── skills.css          # Skills section
+│   ├── projects.css        # Projects section
+│   ├── contact.css         # Contact form
+│   ├── footer.css          # Footer
+│   ├── animations.css      # Keyframe animations
+│   ├── responsive.css      # Media queries
 │   └── theme/              # Theme variants
 │       ├── dark.css
 │       ├── dark-hc.css
@@ -96,12 +113,25 @@ portilla/
 │       └── light-mc.css
 ├── js/
 │   ├── main.js             # Application entry point
-│   ├── theme.js            # Theme & contrast management
 │   ├── language.js         # Language switching module
 │   ├── navigation.js       # Navigation & scrolling module
 │   ├── form.js             # Form handling module
-│   └── translations.js     # i18n translations data
+│   ├── theme/              # Theme module
+│   │   ├── index.js        # Main entry point
+│   │   ├── constants.js    # Theme constants
+│   │   ├── detection.js    # System preference detection
+│   │   ├── utils.js        # Utility functions
+│   │   ├── application.js  # Theme application
+│   │   ├── state.js        # State management
+│   │   └── listeners.js     # System preference listeners
+│   └── i18n/               # Internationalization module
+│       ├── index.js        # Main entry point
+│       ├── en.js           # English translations
+│       ├── pt.js           # Portuguese translations
+│       ├── es.js           # Spanish translations
+│       └── messages.js     # Success messages
 ├── index.html
+├── CHANGELOG.md
 ├── LICENSE
 └── README.md
 ```
@@ -120,7 +150,7 @@ portilla/
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/portilla.git
+git clone https://github.com/herissonneves/portilla.git
 ```
 
 1. Navigate to the project directory:
@@ -176,8 +206,9 @@ xdg-open index.html
    - Replace `#` with your actual social media URLs
 
 4. **Customize Colors**:
-   - Edit CSS variables in `css/styles.css`
+   - Edit CSS variables in `css/base.css`
    - Change primary and secondary colors to match your brand
+   - Note: Colors are now managed through Material Design 3 tokens in theme files
 
 5. **Add Your Photo**:
    - Replace the emoji placeholder (👨‍💻) with an actual image
@@ -195,20 +226,17 @@ xdg-open index.html
 
 ### Color Customization
 
-The main colors can be customized by editing the CSS variables in `css/styles.css`:
+Colors are managed through Material Design 3 design tokens. To customize:
 
-```css
-:root {
-    --primary-color: #2563eb;
-    --secondary-color: #1e40af;
-    --dark-bg: #0f172a;
-    --light-bg: #f8fafc;
-    --text-dark: #1e293b;
-    --text-light: #64748b;
-    --white: #ffffff;
-    --accent: #3b82f6;
-}
-```
+1. **Theme Colors**: Edit `css/theme/*.css` files
+   - Modify `--md-sys-color-primary`, `--md-sys-color-secondary`, etc.
+   - Maintain MD3 token naming convention
+
+2. **Base Variables**: Edit `css/base.css` for non-theme colors
+   - Typography scale variables
+   - Elevation levels
+   - Shape corner radius
+   - Motion durations
 
 ### JavaScript Architecture
 
@@ -217,14 +245,38 @@ The application uses a modular ES6 architecture with BEM CSS methodology:
 **JavaScript Modules:**
 
 - **`main.js`**: Application entry point, initializes all modules
-- **`theme.js`**: Theme and contrast level management with system detection
 - **`language.js`**: Handles language switching and translations
 - **`navigation.js`**: Menu toggling, smooth scrolling, scroll effects
 - **`form.js`**: Contact form handling and validation
-- **`translations.js`**: i18n data for all supported languages
+
+**Theme Module** (`js/theme/`):
+
+- **`index.js`**: Main entry point, exports all theme functions
+- **`constants.js`**: Theme and contrast level constants
+- **`detection.js`**: System preference detection
+- **`utils.js`**: Utility functions (buildThemeClass, updateThemeControls)
+- **`application.js`**: Theme application logic
+- **`state.js`**: State management for current theme/contrast
+- **`listeners.js`**: System preference change listeners
+
+**i18n Module** (`js/i18n/`):
+
+- **`index.js`**: Main entry point, combines all translations
+- **`en.js`**: English translations
+- **`pt.js`**: Portuguese (BR) translations
+- **`es.js`**: Spanish translations
+- **`messages.js`**: Form success messages by language
 
 **CSS Architecture:**
 
+- **Modular Structure**: 14 focused CSS modules
+  - `base.css` - Reset, variables, typography
+  - `navigation.css` - Navigation bar
+  - `hero.css` - Hero section
+  - `buttons.css` - Button components
+  - Component-specific modules (about, skills, projects, contact, footer)
+  - `animations.css` - Keyframe animations
+  - `responsive.css` - Media queries
 - **BEM Methodology**: Block Element Modifier naming convention
   - Example: `.navigation__menu--active`
 - **Material Design 3 Tokens**: Design system variables
@@ -233,8 +285,12 @@ The application uses a modular ES6 architecture with BEM CSS methodology:
   - Elevation: `--md-sys-elevation-level1`
   - Shape: `--md-sys-shape-corner-medium`
   - Motion: `--md-sys-motion-duration-short2`
+- **Main Entry Point**: `css/index.css` imports all modules
 
-To add new functionality, create a new module and import it in `main.js`.
+To add new functionality:
+
+- **CSS**: Create a new module in `css/` and import it in `css/index.css`
+- **JavaScript**: Create a new module in `js/` and import it in `js/main.js`
 
 ## 📱 Responsive Breakpoints
 
