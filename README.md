@@ -238,11 +238,10 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 👤 Author
 
-### Your Name
+### Herisson Neves
 
-- GitHub: [@yourusername](https://github.com/yourusername)
-- LinkedIn: [Your Name](https://linkedin.com/in/yourprofile)
-- Email: <your.email@example.com>
+- GitHub: [@herissonneves](https://github.com/herissonneves)
+- Email: [herisson.carvalho96@gmail.com](mailto:herisson.carvalho96@gmail.com)
 
 ## ⭐️ Show Your Support
 
