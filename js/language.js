@@ -3,7 +3,7 @@
  * Handles language switching and text translation
  */
 
-import { translations } from './translations.js';
+import { translations } from './i18n/index.js';
 
 let currentLang = 'en';
 

@@ -6,7 +6,7 @@
 import { changeLanguage, initLanguage } from './language.js';
 import { toggleMenu, initNavigation } from './navigation.js';
 import { initForm } from './form.js';
-import { initTheme, changeTheme, changeContrast } from './theme.js';
+import { initTheme, changeTheme, changeContrast } from './theme/index.js';
 
 /**
  * Initializes the application
