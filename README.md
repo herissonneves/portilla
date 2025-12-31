@@ -2,7 +2,19 @@
 
 A modern, responsive portfolio landing page for IT development professionals entering the job market.
 
+[![Live Demo](https://img.shields.io/badge/demo-live-success?style=for-the-badge)](https://herissonneves.github.io/portilla/)
+[![GitHub Release](https://img.shields.io/github/v/release/herissonneves/portilla?style=for-the-badge)](https://github.com/herissonneves/portilla/releases)
+[![License](https://img.shields.io/github/license/herissonneves/portilla?style=for-the-badge)](LICENSE)
+
+🌐 **[View Live Demo](https://herissonneves.github.io/portilla/)**
+
 ![Portfolio Preview](https://via.placeholder.com/800x400/2563eb/ffffff?text=Portilla+Portfolio)
+
+## 🌟 Quick Start
+
+**Visit the live website**: [https://herissonneves.github.io/portilla/](https://herissonneves.github.io/portilla/)
+
+The portfolio is fully deployed and ready to explore! Try switching between themes, languages, and contrast levels to experience all features.
 
 ## 🚀 Features
 
@@ -230,7 +242,7 @@ To add new functionality, create a new module and import it in `main.js`.
 
 ## 🤝 Contributing
 
-Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/yourusername/portilla/issues).
+Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/herissonneves/portilla/issues).
 
 ## 📝 License
 
