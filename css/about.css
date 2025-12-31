@@ -1,0 +1,43 @@
+/**
+ * About Block (BEM)
+ */
+
+.about__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+    align-items: center;
+}
+
+.about__paragraph {
+    margin-bottom: 16px;
+    color: var(--md-sys-color-on-surface-variant);
+    font-size: var(--md-sys-typescale-body-large-size);
+    line-height: var(--md-sys-typescale-body-large-line-height);
+}
+
+.about__paragraph--highlighted {
+    margin-top: 24px;
+    padding: 16px;
+    background: var(--md-sys-color-surface-container-low);
+    border-radius: var(--md-sys-shape-corner-medium);
+    font-style: italic;
+}
+
+.about__image-container {
+    text-align: center;
+}
+
+.about__profile {
+    width: 300px;
+    height: 300px;
+    border-radius: var(--md-sys-shape-corner-extra-large);
+    background: linear-gradient(135deg, var(--md-sys-color-primary), var(--md-sys-color-tertiary));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 80px;
+    margin: 0 auto;
+    box-shadow: var(--md-sys-elevation-level3);
+}
+

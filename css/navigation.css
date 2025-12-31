@@ -1,0 +1,86 @@
+/**
+ * Navigation Block (BEM)
+ */
+
+.navigation {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: var(--md-sys-color-surface-container);
+    box-shadow: var(--md-sys-elevation-level2);
+    z-index: 1000;
+    transition: box-shadow var(--md-sys-motion-duration-short4) var(--md-sys-motion-easing-standard);
+}
+
+.navigation--scrolled {
+    box-shadow: var(--md-sys-elevation-level3);
+}
+
+.navigation__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 16px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation__logo {
+    font-size: var(--md-sys-typescale-title-large-size);
+    font-weight: var(--md-sys-typescale-title-large-weight);
+    color: var(--md-sys-color-primary);
+    letter-spacing: 0.5px;
+}
+
+.navigation__github-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: var(--md-sys-shape-corner-full);
+    color: var(--md-sys-color-on-surface);
+    transition: all var(--md-sys-motion-duration-short2) var(--md-sys-motion-easing-standard);
+    text-decoration: none;
+}
+
+.navigation__github-link:hover {
+    background-color: var(--md-sys-color-surface-container-highest);
+    color: var(--md-sys-color-primary);
+}
+
+.navigation__github-link svg {
+    display: block;
+}
+
+.navigation__menu {
+    display: flex;
+    gap: 8px;
+    list-style: none;
+    align-items: center;
+}
+
+.navigation__link {
+    text-decoration: none;
+    color: var(--md-sys-color-on-surface);
+    font-weight: var(--md-sys-typescale-label-large-weight);
+    padding: 8px 16px;
+    border-radius: var(--md-sys-shape-corner-full);
+    transition: background-color var(--md-sys-motion-duration-short2) var(--md-sys-motion-easing-standard);
+}
+
+.navigation__link:hover {
+    background-color: var(--md-sys-color-surface-container-highest);
+}
+
+.navigation__mobile-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: var(--md-sys-color-on-surface);
+    padding: 8px;
+    border-radius: var(--md-sys-shape-corner-small);
+}
+

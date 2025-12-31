@@ -1,0 +1,48 @@
+/**
+ * Button Block (BEM)
+ */
+
+.button {
+    padding: 16px 24px;
+    border: none;
+    border-radius: var(--md-sys-shape-corner-full);
+    font-size: var(--md-sys-typescale-label-large-size);
+    font-weight: var(--md-sys-typescale-label-large-weight);
+    cursor: pointer;
+    transition: all var(--md-sys-motion-duration-short2) var(--md-sys-motion-easing-standard);
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+}
+
+.button--filled {
+    background-color: var(--md-sys-color-primary);
+    color: var(--md-sys-color-on-primary);
+    box-shadow: var(--md-sys-elevation-level1);
+}
+
+.button--filled:hover {
+    box-shadow: var(--md-sys-elevation-level2);
+    transform: translateY(-2px);
+}
+
+.button--outlined {
+    background: transparent;
+    color: var(--md-sys-color-primary);
+    border: 1px solid var(--md-sys-color-outline);
+}
+
+.button--outlined:hover {
+    background-color: var(--md-sys-color-surface-container-high);
+}
+
+.button--tonal {
+    background-color: var(--md-sys-color-secondary-container);
+    color: var(--md-sys-color-on-secondary-container);
+}
+
+.button--tonal:hover {
+    box-shadow: var(--md-sys-elevation-level1);
+}
+
