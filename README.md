@@ -24,8 +24,8 @@ A modern, responsive portfolio landing page for IT development professionals ent
 
 - **HTML5**: Semantic markup and modern structure
 - **CSS3**: Custom properties, flexbox, grid, animations
-- **JavaScript**: Vanilla JS for interactivity and language switching
-- **No Dependencies**: Pure HTML/CSS/JS - no frameworks required
+- **JavaScript ES6+**: Modular architecture with ES6 modules
+- **No Dependencies**: Pure HTML/CSS/JS - no frameworks or build tools required
 
 ## 🎨 Theme System
 
@@ -54,13 +54,20 @@ Language switching is instant and affects all content throughout the page.
 ```
 portilla/
 ├── css/
-│   └── theme/
+│   ├── styles.css          # Main stylesheet
+│   └── theme/              # Theme variants
 │       ├── dark.css
 │       ├── dark-hc.css
 │       ├── dark-mc.css
 │       ├── light.css
 │       ├── light-hc.css
 │       └── light-mc.css
+├── js/
+│   ├── main.js             # Application entry point
+│   ├── language.js         # Language switching module
+│   ├── navigation.js       # Navigation & scrolling module
+│   ├── form.js             # Form handling module
+│   └── translations.js     # i18n translations data
 ├── index.html
 ├── LICENSE
 └── README.md
@@ -70,7 +77,10 @@ portilla/
 
 ### Prerequisites
 
-No prerequisites needed! This is a static website that runs in any modern web browser.
+- A modern web browser with ES6 module support (Chrome 61+, Firefox 60+, Safari 11+, Edge 16+)
+- Optional: A local web server for development (e.g., Live Server, Python's http.server)
+
+**Note**: Due to ES6 modules, you may need to serve the files through a local web server instead of opening `index.html` directly in some browsers.
 
 ### Installation
 
@@ -85,6 +95,24 @@ cd portilla
 ```
 
 3. Open `index.html` in your web browser:
+
+**Option A - Using a local web server (Recommended):**
+
+```bash
+# Using Python 3
+python -m http.server 8000
+
+# Using Node.js (if you have http-server installed)
+npx http-server
+
+# Using PHP
+php -S localhost:8000
+```
+
+Then open `http://localhost:8000` in your browser.
+
+**Option B - Direct file opening (may have limitations with ES6 modules):**
+
 ```bash
 # On Windows
 start index.html
@@ -95,8 +123,6 @@ open index.html
 # On Linux
 xdg-open index.html
 ```
-
-Or simply drag and drop the `index.html` file into your browser.
 
 ## 🎯 Customization
 
@@ -115,16 +141,21 @@ Or simply drag and drop the `index.html` file into your browser.
    - Replace `#` with your actual social media URLs
 
 4. **Customize Colors**:
-   - Edit CSS variables in the `:root` section
+   - Edit CSS variables in `css/styles.css`
    - Change primary and secondary colors to match your brand
 
 5. **Add Your Photo**:
    - Replace the emoji placeholder (👨‍💻) with an actual image
-   - Update the `.profile-placeholder` div with an `<img>` tag
+   - Update the `.profile-placeholder` div in `index.html` with an `<img>` tag
+
+6. **Extend Functionality**:
+   - JavaScript modules are in the `js/` folder
+   - Add new modules and import them in `js/main.js`
+   - Follow the existing modular pattern
 
 ### Color Customization
 
-The main colors can be customized by editing the CSS variables in `index.html`:
+The main colors can be customized by editing the CSS variables in `css/styles.css`:
 
 ```css
 :root {
@@ -138,6 +169,18 @@ The main colors can be customized by editing the CSS variables in `index.html`:
     --accent: #3b82f6;
 }
 ```
+
+### JavaScript Architecture
+
+The application uses a modular ES6 architecture:
+
+- **`main.js`**: Application entry point, initializes all modules
+- **`language.js`**: Handles language switching and translations
+- **`navigation.js`**: Menu toggling, smooth scrolling, scroll effects
+- **`form.js`**: Contact form handling and validation
+- **`translations.js`**: i18n data for all supported languages
+
+To add new functionality, create a new module and import it in `main.js`.
 
 ## 📱 Responsive Breakpoints
 
