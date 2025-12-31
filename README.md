@@ -263,4 +263,4 @@ Give a ⭐️ if this project helped you!
 
 ---
 
-Built with ❤️ for developers entering the IT job market
+Built with 💪 for developers entering the IT job market
