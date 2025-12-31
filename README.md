@@ -10,13 +10,13 @@ A modern, responsive portfolio landing page for IT development professionals ent
 - **BEM CSS Methodology**: Clean, maintainable CSS with Block Element Modifier naming convention
 - **Responsive Design**: Fully responsive layout that works seamlessly on desktop, tablet, and mobile devices
 - **Multi-language Support**: Built-in internationalization with English, Portuguese (BR), and Spanish
-- **Advanced Theme System**: 
+- **Advanced Theme System**:
   - Light and dark modes with system preference detection
   - Three contrast levels: Standard, Medium, and High Contrast
   - Automatic system theme and contrast detection
   - User preference persistence with localStorage
 - **Modern UI/UX**: Clean, professional design with MD3 elevation, typography, and motion systems
-- **Interactive Sections**: 
+- **Interactive Sections**:
   - Hero section with call-to-action buttons
   - About section with professional introduction
   - Skills showcase with categorized technical abilities
@@ -40,16 +40,19 @@ A modern, responsive portfolio landing page for IT development professionals ent
 The project includes a comprehensive Material Design 3 theme system with multiple variants:
 
 ### Light Themes
+
 - `light.css` - Standard light theme (low contrast)
 - `light-mc.css` - Medium contrast light theme
 - `light-hc.css` - High contrast light theme
 
 ### Dark Themes
+
 - `dark.css` - Standard dark theme (low contrast)
 - `dark-mc.css` - Medium contrast dark theme
 - `dark-hc.css` - High contrast dark theme
 
 ### Features
+
 - **Automatic Detection**: Detects system theme preference (`prefers-color-scheme`)
 - **Contrast Detection**: Detects system contrast preference (`prefers-contrast`)
 - **User Preferences**: Saves theme and contrast choices in localStorage
@@ -66,7 +69,7 @@ Language switching is instant and affects all content throughout the page.
 
 ## 📁 Project Structure
 
-```
+```text
 portilla/
 ├── css/
 │   ├── styles.css          # Main stylesheet
@@ -101,16 +104,18 @@ portilla/
 ### Installation
 
 1. Clone the repository:
+
 ```bash
 git clone https://github.com/yourusername/portilla.git
 ```
 
-2. Navigate to the project directory:
+1. Navigate to the project directory:
+
 ```bash
 cd portilla
 ```
 
-3. Open `index.html` in your web browser:
+1. Open `index.html` in your web browser:
 
 **Option A - Using a local web server (Recommended):**
 
@@ -144,7 +149,7 @@ xdg-open index.html
 
 ### Personalizing Your Portfolio
 
-1. **Update Personal Information**: 
+1. **Update Personal Information**:
    - Edit the content in `index.html`
    - Replace placeholder text with your own information
 
@@ -196,6 +201,7 @@ The main colors can be customized by editing the CSS variables in `css/styles.cs
 The application uses a modular ES6 architecture with BEM CSS methodology:
 
 **JavaScript Modules:**
+
 - **`main.js`**: Application entry point, initializes all modules
 - **`theme.js`**: Theme and contrast level management with system detection
 - **`language.js`**: Handles language switching and translations
@@ -204,6 +210,7 @@ The application uses a modular ES6 architecture with BEM CSS methodology:
 - **`translations.js`**: i18n data for all supported languages
 
 **CSS Architecture:**
+
 - **BEM Methodology**: Block Element Modifier naming convention
   - Example: `.navigation__menu--active`
 - **Material Design 3 Tokens**: Design system variables
@@ -231,11 +238,11 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 👤 Author
 
-**Your Name**
+### Your Name
 
 - GitHub: [@yourusername](https://github.com/yourusername)
 - LinkedIn: [Your Name](https://linkedin.com/in/yourprofile)
-- Email: your.email@example.com
+- Email: <your.email@example.com>
 
 ## ⭐️ Show Your Support
 
@@ -244,15 +251,17 @@ Give a ⭐️ if this project helped you!
 ## 📸 Screenshots
 
 ### Desktop View
+
 ![Desktop View](https://via.placeholder.com/800x500/2563eb/ffffff?text=Desktop+View)
 
 ### Mobile View
+
 ![Mobile View](https://via.placeholder.com/400x800/2563eb/ffffff?text=Mobile+View)
 
 ### Language Switching
+
 ![Language Switching](https://via.placeholder.com/800x500/2563eb/ffffff?text=Multi-language+Support)
 
 ---
 
-*Built with ❤️ for developers entering the IT job market*
-
+Built with ❤️ for developers entering the IT job market
