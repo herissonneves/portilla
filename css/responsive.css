@@ -1,0 +1,57 @@
+/**
+ * Responsive Design
+ */
+
+@media (max-width: 768px) {
+    .navigation__menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: var(--md-sys-color-surface-container);
+        flex-direction: column;
+        padding: 16px;
+        box-shadow: var(--md-sys-elevation-level2);
+        gap: 4px;
+    }
+
+    .navigation__menu--active {
+        display: flex;
+    }
+
+    .navigation__mobile-toggle {
+        display: block;
+    }
+
+    .hero__title {
+        font-size: var(--md-sys-typescale-headline-large-size);
+    }
+
+    .hero__subtitle {
+        font-size: var(--md-sys-typescale-title-large-size);
+    }
+
+    .about__content {
+        grid-template-columns: 1fr;
+    }
+
+    .hero__actions {
+        flex-direction: column;
+    }
+
+    .about__profile {
+        width: 200px;
+        height: 200px;
+        font-size: 60px;
+    }
+
+    .section {
+        padding: 48px 16px;
+    }
+
+    .section__title {
+        font-size: var(--md-sys-typescale-headline-medium-size);
+    }
+}
+

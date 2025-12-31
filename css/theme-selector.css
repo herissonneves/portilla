@@ -1,0 +1,25 @@
+/**
+ * Theme Selector Block (BEM)
+ */
+
+.theme-selector {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.theme-selector__label {
+    font-size: var(--md-sys-typescale-body-medium-size);
+    color: var(--md-sys-color-on-surface-variant);
+}
+
+.theme-selector__control {
+    padding: 6px 12px;
+    border: 1px solid var(--md-sys-color-outline);
+    background-color: var(--md-sys-color-surface);
+    color: var(--md-sys-color-on-surface);
+    border-radius: var(--md-sys-shape-corner-small);
+    font-size: var(--md-sys-typescale-body-medium-size);
+    cursor: pointer;
+}
+

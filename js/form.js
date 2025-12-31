@@ -4,7 +4,7 @@
  */
 
 import { getCurrentLanguage } from './language.js';
-import { successMessages } from './translations.js';
+import { successMessages } from './i18n/index.js';
 
 /**
  * Handles form submission

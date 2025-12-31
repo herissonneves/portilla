@@ -3,6 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Herisson Neves - Professional IT Developer Portfolio. Modern portfolio landing page featuring Material Design 3, BEM CSS, and multi-language support.">
+    <meta name="author" content="Herisson Neves">
+    <meta name="keywords" content="portfolio, web developer, IT, HTML, CSS, JavaScript, Material Design 3, BEM CSS">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://herissonneves.github.io/portilla/">
+    <meta property="og:title" content="Portilla - Herisson Neves Portfolio">
+    <meta property="og:description" content="Professional IT Developer Portfolio with Material Design 3 and multi-language support">
+    <meta property="og:image" content="https://herissonneves.github.io/portilla/og-image.png">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://herissonneves.github.io/portilla/">
+    <meta property="twitter:title" content="Portilla - Herisson Neves Portfolio">
+    <meta property="twitter:description" content="Professional IT Developer Portfolio with Material Design 3 and multi-language support">
+    <meta property="twitter:image" content="https://herissonneves.github.io/portilla/og-image.png">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://herissonneves.github.io/portilla/">
+    
     <title>portilla - Professional Portfolio</title>
     
     <!-- Material Design 3 Theme System -->
@@ -14,7 +35,7 @@
     <link rel="stylesheet" href="css/theme/dark-hc.css">
     
     <!-- Main Stylesheet -->
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/index.css">
     
     <!-- Google Fonts - Roboto -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,6 +47,11 @@
     <nav class="navigation" id="navigation">
         <div class="navigation__container">
             <div class="navigation__logo">portilla</div>
+            <a href="https://github.com/herissonneves" target="_blank" rel="noopener noreferrer" class="navigation__github-link" aria-label="GitHub Profile" title="GitHub Profile">
+                <svg width="24" height="24" viewBox="0 0 16 16" fill="currentColor">
+                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+                </svg>
+            </a>
             <button class="navigation__mobile-toggle" onclick="toggleMenu()" aria-label="Toggle menu">☰</button>
             <ul class="navigation__menu" id="navMenu">
                 <li class="navigation__item">
@@ -100,6 +126,9 @@
                 <p class="about__paragraph" data-translate="about-p3">
                     I'm excited to collaborate with teams and contribute to building amazing digital experiences.
                 </p>
+                <p class="about__paragraph about__paragraph--highlighted" data-translate="about-portilla">
+                    <strong>About the name:</strong> <em>Portilla</em> means "small door" or "gateway" in Spanish, symbolizing the entry point to my professional profile and career journey in IT development.
+                </p>
             </div>
             <div class="about__image-container">
                 <div class="about__profile">👨‍💻</div>
@@ -116,7 +145,7 @@
                 <ul class="skill-card__list">
                     <li class="skill-card__item">HTML5 & CSS3</li>
                     <li class="skill-card__item">JavaScript (ES6+)</li>
-                    <li class="skill-card__item">React / Vue</li>
+                    <li class="skill-card__item">React</li>
                     <li class="skill-card__item" data-translate="skills-frontend-responsive">Responsive Design</li>
                 </ul>
             </div>
@@ -157,6 +186,9 @@
                         <span class="tag">CSS</span>
                         <span class="tag">JavaScript</span>
                     </div>
+                    <div class="project-card__actions">
+                        <a href="https://github.com/herissonneves/portilla" target="_blank" rel="noopener noreferrer" class="button button--outlined">GitHub</a>
+                    </div>
                 </div>
             </article>
             <article class="project-card">
@@ -171,6 +203,10 @@
                         <span class="tag">CSS</span>
                         <span class="tag">JavaScript</span>
                     </div>
+                    <div class="project-card__actions">
+                        <a href="https://herissonneves.github.io/axio/" target="_blank" rel="noopener noreferrer" class="button button--filled">Live Demo</a>
+                        <a href="https://github.com/herissonneves/axio" target="_blank" rel="noopener noreferrer" class="button button--outlined">GitHub</a>
+                    </div>
                 </div>
             </article>
             <article class="project-card">
@@ -184,6 +220,10 @@
                         <span class="tag">HTML</span>
                         <span class="tag">CSS</span>
                         <span class="tag">JavaScript</span>
+                    </div>
+                    <div class="project-card__actions">
+                        <a href="https://herissonneves.github.io/quantio/" target="_blank" rel="noopener noreferrer" class="button button--filled">Live Demo</a>
+                        <a href="https://github.com/herissonneves/quantio" target="_blank" rel="noopener noreferrer" class="button button--outlined">GitHub</a>
                     </div>
                 </div>
             </article>
