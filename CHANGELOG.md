@@ -5,6 +5,67 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.1.0] - 2025-01-01
+
+### Added
+
+- **GitHub Integration**
+  - GitHub profile button in navigation bar with official icon
+  - Direct links to project repositories (Axio, Quantio)
+  - Live demo links for all projects
+
+- **SEO Improvements**
+  - Comprehensive meta tags (description, author, keywords)
+  - Open Graph tags for social media sharing
+  - Twitter Card meta tags
+  - Canonical URL configuration
+
+- **Content Enhancements**
+  - Name meaning explanation (Portilla = "gateway" in Spanish)
+  - Updated project descriptions with accurate information
+  - Live demo badges and links in README
+
+- **Modular CSS Architecture**
+  - Split CSS into 14 focused modules
+  - Base styles, navigation, hero, buttons, sections
+  - Component-specific styles (about, skills, projects, contact, footer)
+  - Separate animations and responsive modules
+  - Main index.css entry point
+
+- **Modular JavaScript Architecture**
+  - Theme module split into 7 focused files (constants, detection, utils, application, state, listeners)
+  - i18n module split into 5 files (en, pt, es, messages, index)
+  - Improved code organization and maintainability
+  - Better separation of concerns
+
+### Changed
+
+- **Skills Section**
+  - Removed Vue.js (only React remains in frontend skills)
+  - Updated to reflect actual expertise
+
+- **Project Cards**
+  - Added dual action buttons (Live Demo + GitHub) for Axio and Quantio
+  - Removed Portilla live demo (current app is the live version)
+  - Improved button styling with Material Design 3
+
+- **Code Quality**
+  - Removed all inline styles from HTML
+  - Moved styles to proper CSS classes following BEM methodology
+  - Improved code maintainability and organization
+
+- **Documentation**
+  - Added live demo URL to README
+  - Added badges for demo, release, and license
+  - Updated project structure documentation
+  - Added Quick Start section
+
+### Fixed
+
+- Markdown linting issues
+- Code organization and structure
+- Import paths after modularization
+
 ## [1.0.0] - 2024-12-31
 
 ### Added
@@ -110,4 +171,5 @@ This is the first stable release of Portilla, a professional portfolio landing p
 - 📱 Fully responsive design
 - 🚀 Zero dependencies
 
+[1.1.0]: https://github.com/herissonneves/portilla/releases/tag/v1.1.0
 [1.0.0]: https://github.com/herissonneves/portilla/releases/tag/v1.0.0
