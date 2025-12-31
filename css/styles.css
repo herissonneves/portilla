@@ -124,6 +124,27 @@ body {
     letter-spacing: 0.5px;
 }
 
+.navigation__github-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: var(--md-sys-shape-corner-full);
+    color: var(--md-sys-color-on-surface);
+    transition: all var(--md-sys-motion-duration-short2) var(--md-sys-motion-easing-standard);
+    text-decoration: none;
+}
+
+.navigation__github-link:hover {
+    background-color: var(--md-sys-color-surface-container-highest);
+    color: var(--md-sys-color-primary);
+}
+
+.navigation__github-link svg {
+    display: block;
+}
+
 .navigation__menu {
     display: flex;
     gap: 8px;
