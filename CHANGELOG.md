@@ -7,7 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [1.1.0] - 2025-01-01
 
-### Added
+### Added {#v1.1.0-added}
 
 - **GitHub Integration**
   - GitHub profile button in navigation bar with official icon
@@ -38,7 +38,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - Improved code organization and maintainability
   - Better separation of concerns
 
-### Changed
+### Changed {#v1.1.0-changed}
 
 - **Skills Section**
   - Removed Vue.js (only React remains in frontend skills)
@@ -60,7 +60,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - Updated project structure documentation
   - Added Quick Start section
 
-### Fixed
+### Fixed {#v1.1.0-fixed}
 
 - Markdown linting issues
 - Code organization and structure
@@ -68,7 +68,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [1.0.0] - 2024-12-31
 
-### Added
+### Added {#v1.0.0-added}
 
 - **Material Design 3 Implementation**
   - Complete Material Design 3 design token system
@@ -132,14 +132,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - Customization guidelines
   - Technology stack details
 
-### Changed
+### Changed {#v1.0.0-changed}
 
 - Refactored HTML to use external CSS and JavaScript files
 - Updated all CSS classes to follow BEM naming convention
 - Improved navigation with scroll effects
 - Enhanced form handling with modular approach
 
-### Fixed
+### Fixed {#v1.0.0-fixed}
 
 - Markdown linting errors in README
 - Empty CSS blocks removed for cleaner code
