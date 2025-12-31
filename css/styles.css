@@ -131,10 +131,6 @@ body {
     align-items: center;
 }
 
-.navigation__item {
-    /* Item styles */
-}
-
 .navigation__link {
     text-decoration: none;
     color: var(--md-sys-color-on-surface);
@@ -349,9 +345,6 @@ body {
     align-items: center;
 }
 
-.about__text {
-    /* Text container */
-}
 
 .about__paragraph {
     margin-bottom: 16px;
